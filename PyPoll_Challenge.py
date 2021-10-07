@@ -6,6 +6,9 @@ import csv
 import os
 COUNTY_COL = 1
 # Add a variable to load a file from a path.
+# print(os.getcwd())
+os.chdir(os.path.dirname(os.path.realpath(__file__)))
+# print(os.getcwd())
 file_to_load = os.path.join("Resources", "election_results.csv")
 # Add a variable to save the file to a path.
 file_to_save = os.path.join("analysis", "election_results.txt")
