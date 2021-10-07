@@ -20,8 +20,9 @@ The intention of this audit is to summarize election results by winning candidat
 * Which candidate won the election, what was their vote count, and what was their percentage of the total votes?
     * Diana DeGette: 73.8% (272,892)
 
+[Election Results Summary](https://github.com/tonyferri/Election_Analysis/blob/main/Resources/election_results_txt_file.png)
+[Code Example 1: For Loop](https://github.com/tonyferri/Election_Analysis/blob/main/Resources/code_forloop_county.png)
+[Code Example 2: Winner](https://github.com/tonyferri/Election_Analysis/blob/main/Resources/code_winner.png)
+
 ## Election-Audit Summary:
-
-
-
-Election-Audit Summary: In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. Give at least two examples of how this script can be modified to be used for other
+While this script worked well for this election audit, it can also be used for any potential future audits as well.  The variables "file_to_load" and "file_to_save" would need to be be modified to accomodate a new folder structure and file name.  Also, if the format of the csv file did not match the current example, script would need to modified in reference to candidate name and county.
