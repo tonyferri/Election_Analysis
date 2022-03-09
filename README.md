@@ -22,30 +22,30 @@ The intention of this audit is to summarize election results by winning candidat
 
 ## References:
 ### Pics:
-[Election Results Summary](https://github.com/tonyferri/Election_Analysis/blob/main/Resources/election_results_txt_file.png);
+![Election Results Summary](https://github.com/tonyferri/Election_Analysis/blob/main/Resources/election_results_txt_file.png)
 
 
 ### Code samples:
-'county_perc = (float(votecount_county) / float(total_votes)) * 100'
+`county_perc = (float(votecount_county) / float(total_votes)) * 100`
 
-'county_votes_txt = (f"{county}: {county_perc:.1f}% ({votecount_county:,})\n")'
+`county_votes_txt = (f"{county}: {county_perc:.1f}% ({votecount_county:,})\n")`
 
-'turnout_county_summary = (
+`turnout_county_summary = (
         f"\n-------------------------\n"
         f"Largest County Turnout: {turnout_county}\n"
-        f"-------------------------\n")'
+        f"-------------------------\n")`
 
-'if (votes > winning_count) and (vote_percentage > winning_percentage):
+`if (votes > winning_count) and (vote_percentage > winning_percentage):
             winning_count = votes
             winning_candidate = candidate_name
-            winning_percentage = vote_percentage'
+            winning_percentage = vote_percentage`
 
-'winning_candidate_summary = (
+`winning_candidate_summary = (
         f"-------------------------\n"
         f"Winner: {winning_candidate}\n"
         f"Winning Vote Count: {winning_count:,}\n"
         f"Winning Percentage: {winning_percentage:.1f}%\n"
-        f"-------------------------")'
+        f"-------------------------")`
 
 ## Election Audit Summary:
 While this script worked well for this election audit, it can also be used for any potential future audits as well.  The variables "file_to_load" and "file_to_save" would need to be be modified to accomodate a new folder structure and file name.  Also, if the format of the csv file did not match the current example, script would need to modified in reference to candidate name and county.
